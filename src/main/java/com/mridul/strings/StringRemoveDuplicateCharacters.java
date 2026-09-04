@@ -11,7 +11,7 @@ public class StringRemoveDuplicateCharacters {
         // Step1 : Use LinkedHashSet to preserve the insertion order
         Set<Character> seen = new LinkedHashSet<>();
         for (char ch : input.toCharArray()) {
-            seen.add(ch);
+            seen.add(ch); // duplicates automatically ignored
         }
 
         // Step2 : Build result string
